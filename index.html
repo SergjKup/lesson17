@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FizzBuzz</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic&amp;subset=latin,cyrillic-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>FizzBuzz</h1>
+      <p>
+        Требуется написать функцию, выводящую числа от 1 до n, где n —
+        это целое число, которая функция принимает в качестве параметра, с
+        такими условиями:</br> вывод <strong>fizz</strong> вместо чисел, кратных 3;
+        вывод <strong>buzz</strong> вместо чисел, кратных 5; вывод
+        <strong>fizzbuzz</strong> вместо чисел, кратных как 3, так и 5.</br>
+        <strong>Результат вывести списком в тело HTML документа.</strong>
+        <h2>Введите целое число от 1 до n.</h2> 
+      </p>
+      <input type="number" min="0" max="101" id="number-input" />
+      <button type="submit" onclick="run(); return false;">Генерируй!</button>
+      <div>
+        <ul id="result"></ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

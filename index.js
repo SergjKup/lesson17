@@ -12,14 +12,18 @@ function getTotalResult(number) {
   let result = "";
   let resultBlock = document.getElementsByClassName("result");
   resultBlock.innerHTML = "";
+  let resultId = document.getElementById("result");
+
 
   for (var i = 1; i <= number; i++) {
     let node = document.createElement("LI");
     let textnode = document.createTextNode(fizzbuzzy(i));
     node.appendChild(textnode);
-    document.getElementById("result").appendChild(node);
+    resultId.appendChild(node);
   }
 }
+document.body.appendChild(resultId);
+
 
 function checkInput(number) {
   return 0 < number && 100 >= number;
